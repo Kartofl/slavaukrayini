@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -10,7 +11,17 @@
     <header class="header">
         <div class="logo">Kartoplya Games&#9733;</div>
         <nav class="navigation">
-            <button class="burger-menu" id="burger-menu">&#9776;</button>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#about">Про нас</a></li>
+                    <li><a class="menu__item" href="#projects">Ігри</a></li>
+                    <li><a class="menu__item" href="#team">Команда</a></li>
+                </ul>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about" class="nav-link">Про нас</a></li>
                 <li><a href="#projects" class="nav-link">Ігри</a></li>
@@ -19,14 +30,14 @@
         </nav>
     </header>
 
+
+
     <main>
-        <!-- Про нас -->
         <section id="about" class="about">
             <h1>Ласкаво просимо до сайту команди!</h1>
             <p>Ми розробляємо те, що справді любимо, що в свою чергу знаходить відгук у гравців.</p>
         </section>
 
-        <!-- Ігри -->
         <section id="projects" class="projects">
             <h2>Наші ігри</h2>
             <div class="projects-grid">
@@ -54,13 +65,12 @@
             </div>
         </section>
 
-        <!-- Команда -->
+
         <section id="team" class="team">
             <h2>Наша команда</h2>
             <p>Ми - команда з багаторічним досвідом у розробці ігор, що включає програмістів, дизайнерів, художників та сценаристів.</p>
         </section>
     </main>
-
 
 
 <section id="team" class="employee-section">
@@ -103,8 +113,6 @@
         </div>
     </div>
 </section>
-
-
 
 
 
