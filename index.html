@@ -1,12 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartoplya Games</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/control-panel.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">Kartoplya Games&#9733;</div>
@@ -20,22 +22,28 @@
                     <li><a class="menu__item" href="#about">Про нас</a></li>
                     <li><a class="menu__item" href="#projects">Ігри</a></li>
                     <li><a class="menu__item" href="#team">Команда</a></li>
-                </ul>
+					<li><a class="menu__item" href="auth.html">Перейти до авторизації</a></li>
+					<li><a class="menu__item" href="#about" id="fetchActivity">Отримати активність</a></li>                </ul>
             </div>
+
             <ul class="nav-links">
                 <li><a href="#about" class="nav-link">Про нас</a></li>
                 <li><a href="#projects" class="nav-link">Ігри</a></li>
                 <li><a href="#team" class="nav-link">Команда</a></li>
+                <li><a href="auth.html" class="nav-link">Перейти до авторизації</a></li>
+				<li><a href="#about" id="fetchActivity" class="nav-link">Отримати активність</a></li>
             </ul>
-        </nav>
+	    </nav>
     </header>
 
 
 
     <main>
         <section id="about" class="about">
-            <h1>Ласкаво просимо до сайту команди!</h1>
+            <h1>Ласкаво просимо до сайту команди! </h1>
             <p>Ми розробляємо те, що справді любимо, що в свою чергу знаходить відгук у гравців.</p>
+			<em> Також ви можете натиснути <strong>Ctrl + M</strong> для відкриття меню камтомізації.</em>
+			<p id="activityOutput"></p>	
         </section>
 
         <section id="projects" class="projects">
@@ -59,12 +67,10 @@
                 <div class="game-card">
                     <img src="images/game4.png" alt="Game 4">
                     <h3>Lost insight</h3>
-                    <p>Горрор-головоломка з елементами виживання. Внаслідок невідомого катаклізму, що спотворив весь світ, прокидається Ловарт. Хто він такий, що могло спричинити катаклізм і як ми можемо все виправити? Come and try yourself. </p>
+                    <p>Горрор-головоломка з елементами виживання. Внаслідок невідомого катаклізму, що спотворив весь світ, прокидається Ловарт. Хто він такий, що могло спричинити катаклізм і як ми можемо все виправити? Come and try yourself.</p>
                 </div>
-				
             </div>
         </section>
-
 
         <section id="team" class="team">
             <h2>Наша команда</h2>
@@ -72,54 +78,79 @@
         </section>
     </main>
 
-
-<section id="team" class="employee-section">
-    <h2>Наші розробники:</h2>
-    <div class="employee-list">
-        <div class="employee-card">
-            <img src="images/k.png" alt="Game Designer">
-            <div class="employee-info">
-                <h3>Game Designer</h3>
-                <p>Головний розробник з непоганими ідеями і сильною мрією.</p>
+    <section id="team" class="employee-section">
+        <h2>Наші розробники:</h2>
+        <div class="employee-list">
+            <div class="employee-card">
+                <img src="images/k.png" alt="Game Designer">
+                <div class="employee-info">
+                    <h3>Game Designer</h3>
+                    <p>Головний розробник з непоганими ідеями і сильною мрією.</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <img src="images/k.png" alt="Programmer">
+                <div class="employee-info">
+                    <h3>Programmer</h3>
+                    <p>Вивчає програмування навіть незважаючи на попередню ненависть до коду. Чи не диво?</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <img src="images/k.png" alt="Level Designer">
+                <div class="employee-info">
+                    <h3>Level Designer</h3>
+                    <p>Має добре відчуття карти і розуміння того, як її треба робити.</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <img src="images/k.png" alt="Music & Sounds">
+                <div class="employee-info">
+                    <h3>Music & Sounds</h3>
+                    <p>"Якби я був гравцем, що б я хотів почути" - казав він.</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <img src="images/k.png" alt="3D Art">
+                <div class="employee-info">
+                    <h3>3D Art</h3>
+                    <p>Любить свою роботу більше всього на світі, це і впливає на результат.</p>
+                </div>
             </div>
         </div>
-        <div class="employee-card">
-            <img src="images/k.png" alt="Programmer">
-            <div class="employee-info">
-                <h3>Programmer</h3>
-                <p>Вивчає програмування навіть незважаючи на попередню ненависть до коду. Чи не диво?</p>
-            </div>
-        </div>
-        <div class="employee-card">
-            <img src="images/k.png" alt="Level Designer">
-            <div class="employee-info">
-                <h3>Level Designer</h3>
-                <p>Має добре відчуття карти і розуміння того, як її треба робити.</p>
-            </div>
-        </div>
-        <div class="employee-card">
-            <img src="images/k.png" alt="Music & Sounds">
-            <div class="employee-info">
-                <h3>Music & Sounds</h3>
-                <p>"Якби я був гравцем, що б я хотів почути" - казав він.</p>
-            </div>
-        </div>
-        <div class="employee-card">
-            <img src="images/k.png" alt="3D Art">
-            <div class="employee-info">
-                <h3>3D Art</h3>
-                <p>Любить свою роботу більше всього на світі, це і впливає на результат.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+    </section>
 
     <footer class="footer">
         <p>&copy; 2024 Kartoplya Games. Розроблено з вийнятковою любов’ю до ігор.</p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+
+        <div id="menu" class="style-control-panel">
+        <h3>Панель керування стилями</h3>
+        <div>
+            <label for="font-color">Колір тексту:</label>
+            <input type="color" id="font-color" value="#000000">
+        </div>
+        <div>
+            <label for="font-size">Розмір шрифту:</label>
+            <input type="range" id="font-size" min="12" max="36" value="16">
+        </div>
+        <div>
+            <label for="container-width">Ширина контейнера:</label>
+            <input type="range" id="container-width" min="200" max="1200" value="800">
+        </div>
+        <div>
+            <label for="background-color">Колір фону:</label>
+            <input type="color" id="background-color" value="#ffffff">
+        </div>
+        <div>
+            <label for="background-image">Фонове зображення:</label>
+            <input type="url" id="background-image" placeholder="URL картинки">
+        </div>
+    </div>
+	
+
+	<script src="scripts/api.js"></script>
+    <script src="scripts/menu-shortcut.js"></script>
+    <script src="scripts/control-panel.js"></script>
 </body>
 </html>
